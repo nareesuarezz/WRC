@@ -1,0 +1,37 @@
+.header {
+    background-color: rgb(216,188,117);
+    padding: 1em;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image>img {
+    height: initial;
+    width: initial;
+    max-height: 60vh;
+    max-width: 40vw;
+}
+
+@media (min-width: 768px) {
+
+
+    .image>img {
+        height: initial;
+        width: initial;
+        max-height: 70vh;
+        max-width: 45vw;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .image>img {
+        height: initial;
+        width: initial;
+        max-height: 20vh;
+        max-width: 40vw;
+    }
+}

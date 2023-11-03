@@ -1,0 +1,35 @@
+.home-slider {
+  text-align: center;
+}
+
+.home-slider img {
+  max-width: 70%;
+  max-height: 70%;
+  display: inline-block;
+}
+
+
+
+@media (min-width: 768px) {
+  .home-slider {
+    text-align: center;
+  }
+
+  .home-slider img {
+    max-width: 70%;
+    height: auto;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-slider {
+    text-align: center;
+  }
+
+  .home-slider img {
+    max-width: 70%;
+    max-height: 70%;
+    display: inline-block;
+  }
+}

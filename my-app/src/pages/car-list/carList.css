@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.search h2 {
+  margin-bottom: 10px;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.user-menu-container {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.car-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.car-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.car-list-img img {
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+  .search, .main-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search, .main-container {
+     display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 20px;
+  margin-top: 20px;
+  }
+}

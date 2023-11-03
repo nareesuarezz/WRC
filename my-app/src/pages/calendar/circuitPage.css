@@ -1,0 +1,62 @@
+    /* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .user-menu-container {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+
+  }
+
+  /* Estilos para el título */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la descripción */
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para la lista de circuitos */
+  .circuits-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .circuits-list li {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .calendar {
+    width: 80%; 
+    margin: 20px auto; 
+  }
+  
+  .rbc-month-view {
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
