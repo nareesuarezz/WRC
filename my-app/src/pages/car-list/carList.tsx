@@ -14,11 +14,11 @@ interface Car {
 }
 
 function CarList() {
-  const [cars, setCars] = useState<Car[]>([]); // Inicializa el estado con el tipo Car[]
+  const [cars, setCars] = useState<Car[]>([]); 
   const [query, setQuery] = useState("");
 
   const getCars = () => {
-    const allCars = CarListService.getCars() as Car[]; // Asegúrate de que los datos sean del tipo Car[]
+    const allCars = CarListService.getCars() as Car[];
     setCars(allCars);
   }
 

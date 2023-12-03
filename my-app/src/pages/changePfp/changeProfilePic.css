@@ -1,0 +1,60 @@
+.profile-change-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-change-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D8BC75;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.profile-change-inner h1 {
+    color: white;
+}
+
+.profile-pic-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: visible;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.edit-icon {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.file-input {
+    display: none;
+}
+
+.profile-submit-button {
+    background-color: #1F1300;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

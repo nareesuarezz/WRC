@@ -35,7 +35,6 @@ const CircuitPage: React.FC = () => {
     { name: 'MONTECARLO', date: '2024-01-07', time: '11:30' },
   ];
 
-  // Ordena los circuitos por fecha y hora
   const sortedCircuits = circuits.sort((a, b) => new Date(a.date + ' ' + a.time).getTime() - new Date(b.date + ' ' + b.time).getTime());
 
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -50,7 +49,7 @@ const CircuitPage: React.FC = () => {
       title: circuit.name,
       start: new Date(circuit.date + ' ' + circuit.time),
       end: new Date(circuit.date + ' ' + circuit.time),
-      isEarliest: index === 0 // Añade una propiedad para identificar el evento más temprano
+      isEarliest: index === 0,
     }));
     setCircuitEvents(circuitEventsData);
   }, []);
@@ -78,7 +77,7 @@ const CircuitPage: React.FC = () => {
             ))}
           </ul>
         </div>
-        <div className="calendar">
+        <div className="calendar-container">
           <h2>Calendar</h2>
           <Calendar
             localizer={localizer}
@@ -87,10 +86,10 @@ const CircuitPage: React.FC = () => {
             events={circuitEvents}
             defaultView="month"
             defaultDate={selectedDate}
-            onSelectEvent={event => handleDateChange(event.start as Date)}
+            onSelectEvent={(event) => handleDateChange(event.start as Date)}
             eventPropGetter={(event) => ({
               style: {
-                backgroundColor: event.isEarliest ? 'red' : 'blue', // Cambia el color de fondo si es el evento más temprano
+                backgroundColor: event.isEarliest ? 'red' : 'blue',
               },
             })}
           />

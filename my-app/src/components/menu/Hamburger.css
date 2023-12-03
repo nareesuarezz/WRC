@@ -1,6 +1,6 @@
 .Cabecera {
   width: 100%;
-  background-color: transparent; /* Establece el fondo transparente por defecto */
+  background-color: transparent; 
   padding: 1em;
   display: flex;
   flex-flow: row wrap;
@@ -12,7 +12,7 @@
 .Cabecera-button {
   display: flex;
   cursor: pointer;
-  background-color: white; /* Fondo blanco para el botón */
+  background-color: white; 
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -21,7 +21,7 @@
 .Cabecera-svg {
   width: 2em;
   height: 2em;
-  fill: brown; /* Color marrón para el icono del botón */
+  fill: brown; 
 }
 
 .Cabecera-nav {
@@ -29,13 +29,13 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: flex-start; /* Alinea el contenido a la izquierda */
+  align-items: flex-start; 
   height: 0;
   opacity: 0;
   overflow: hidden;
   transition: all 0.5s ease;
-  background-color: rgb(31,19,0); /* Fondo marrón solo cuando el menú está desplegado */
-  text-align: left; /* Alinea el texto a la izquierda */
+  background-color: rgb(31,19,0); 
+  text-align: left; 
 }
 
 .Cabecera-nav.isActive {
@@ -46,23 +46,23 @@
 .Cabecera-ul {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start; /* Alinea el texto a la izquierda */
-  align-items: flex-start; /* Alinea el texto a la izquierda */
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 0;
 }
 
 .Cabecera-li {
   margin: 0.5em 0;
-  list-style: none; /* Quita los puntos de lista */
+  list-style: none;
 }
 
 .Cabecera-a {
   margin-left: 10px;
-  text-decoration: none; /* Quita el subrayado de los enlaces */
-  color: white; /* Color blanco para el texto de la lista */
+  text-decoration: none; 
+  color: white; 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
   .Cabecera-button {
     display: flex;
   }
@@ -70,6 +70,6 @@
   .Cabecera-nav.isActive {
     height: 0;
     opacity: 0;
-    background-color:rgb(31,19,0); /* Fondo marrón solo cuando el menú está desplegado */
+    background-color:rgb(31,19,0); 
   }
 }
